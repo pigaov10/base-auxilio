@@ -1,0 +1,40 @@
+***PYTHON - CONFIGURAÇÃO E INSTALAÇÃO***
+
+Gerenciador de pacotes - https://pypi.python.org/pypi
+
+- Versão 2.xxx
+user@host:~/$ wget <python-version>
+user@host:~/$ tar -zxvf <python>
+user@host:~/$ mkdir <python-folder>
+user@host:~/$ ./configure prefix=<python-folder>
+user@host:~/$ make && make altinstall
+
+- Install setuptools
+user@host:~/$ yum install python-setuptools
+              apt-get install python-setuptools
+              ez_setup install
+
+- Install PIP
+user@host:~/$ yum -y install python-pip
+              apt-get python-pip
+
+- Virtualenv instalação
+user@host:~/$ sudo pip install virtualenv
+  - Criar Virtualenv
+      user@host:~/$ virtualenv <env-folder> -p <python-binary>
+  - Ativar Virtualenv
+      user@host:~/$ source <env-folder>/bin/activate
+  - Desativar
+      user@host:~/$ deactivate
+
+- Versão 3.x - Instalação
+user@host:~/$ sudo yum install yum-utils
+user@host:~/$ sudo yum-builddep python
+user@host:~/$ curl -O <link-python>
+user@host:~/$ tar -zxvf <python>.tgz
+user@host:~/$ ./configure prefix=<python-folder>
+user@host:~/$ make && make altinstall
+user@host:~/$ python3 --version
+
+  - Usar Python 3 como default (Abrir .bashrc)
+    $ alias python='usr/local/bin/python3.5'

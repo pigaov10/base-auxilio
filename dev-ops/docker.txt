@@ -1,0 +1,34 @@
+***DOCKER***
+
+Link Cloud -> http://hub.docker.com
+Compatibilidade -> kernel > 3.8
+Baixar
+  curl -sSL https://get.docker.com | sh
+
+Iniciar e ver se o processo esta rodando
+  /etc/init.d/docker start
+  ps -ef | grep docker ou docker ps
+
+Listar Imagens
+  docker images
+
+Criar Imagem
+  docker run -i -t ubuntu:14.10 /bin/bash
+
+Pausar Imagem
+  docker stop
+
+Usar um container
+  docker attach <container-id>
+
+Commitar uma Imagem
+  docker commit <container-id>  <nome-image> Ex: badtux/nginx-ubuntu:1.0
+
+Rodar com redirecionamento para o apache da Imagem
+  docker run -i -t -p 8080(maq fisica):(porta container)80 ubunto:14.10 /bin/bash
+
+Ver mudanças
+  docker diff <container-id>
+
+Deslogar do container
+  ctrl + P Q
