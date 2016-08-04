@@ -1,1 +1,7 @@
 ***DJANGO***
+
+- Versão
+  user@host:~/$ import django; print django.get_version()
+
+- Iniciar projeto
+  user@host:~/$ django-admin startproject <nome-projeto>
