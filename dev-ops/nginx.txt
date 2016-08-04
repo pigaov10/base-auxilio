@@ -1,5 +1,8 @@
 ***NGINX***
 
+- Introdução
+  1. Nginx é um servidor HTTP e Proxy de alta performace. Suporta múltiplos sites
+
 - Instalação
   user@host:~/$ apt-get install nginx (Ubuntu Debian)
                 yum install nginx (CentOS fedora)
