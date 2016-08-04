@@ -6,7 +6,7 @@ Baixar
   curl -sSL https://get.docker.com | sh
 
 Iniciar e ver se o processo esta rodando
-  /etc/init.d/docker start
+  user@host:~/$ /etc/init.d/docker start
   ps -ef | grep docker ou docker ps
 
 Listar Imagens
