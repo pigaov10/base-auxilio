@@ -1,1 +1,5 @@
 ***NGINX***
+
+- Instalação
+  user@host:~/$ apt-get install nginx (Ubuntu Debian)
+                yum install nginx (CentOS fedora)
