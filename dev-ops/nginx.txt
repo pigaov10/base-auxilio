@@ -2,7 +2,32 @@
 
 - Introdução
   1. Nginx é um servidor HTTP e Proxy de alta performace. Suporta múltiplos sites
+  2. Nginx trabalha com múltiplos workers
 
 - Instalação
   user@host:~/$ apt-get install nginx (Ubuntu Debian)
                 yum install nginx (CentOS fedora)
+
+- Arquivo de configuração diretorio
+  user@host:~/$ /etc/nginx/nginx.conf (Arquivo default)
+
+- Configuração básica do virtualhost
+
+  user@host:~/$ sudo nano /etc/nginx/sites-available/example.com
+  cd /etc/nginx/sites-enabled/
+  user@host:~/$ ln -s /etc/nginx/sites-available/example.com .
+
+  Arquivo: example.com
+  server {
+          listen 80 default_server;
+          listen [::]:80 default_server;
+
+          root /var/www/html;
+          index index.html index.htm index.nginx-debian.html;
+
+          server_name _;
+
+          location / {
+                  try_files $uri $uri/ =404;
+          }
+  }
