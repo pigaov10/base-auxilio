@@ -1,0 +1,11 @@
+***PYTHON - COMANDOS***
+
+- Dependencias de packages do python
+  - Listar
+    user@host:~/$ pip freeze
+  - Exportar
+    user@host:~/$ pip freeze > requirements.txt
+  - Importar
+    user@host:~/$ pip install -r requirements.txt
+  - Atualizar
+    user@host:~/$ pip install -I, --ignore-installed -r requirements.txt

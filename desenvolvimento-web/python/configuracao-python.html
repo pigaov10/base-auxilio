@@ -21,7 +21,8 @@ user@host:~/$ yum -y install python-pip
 - Virtualenv instalação
 user@host:~/$ sudo pip install virtualenv
   - Criar Virtualenv
-      user@host:~/$ virtualenv <env-folder> -p <python-binary>
+      user@host:~/$ virtualenv <env-folder> -p <python-binary> --system-site-packages [acopla pacotes globais]
+                                                               --no-site-packages [não acopla os pacotes globais]
   - Ativar Virtualenv
       user@host:~/$ source <env-folder>/bin/activate
   - Desativar
