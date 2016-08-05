@@ -1,0 +1,5 @@
+***LINUX - COMANDOS***
+
+echo <texto> >> <nome-arquivo> (adiona linha no final do arquivo)
+
+echo <texto> > <nome-arquivo> (subscreve tudo que existe pelo texto)

@@ -3,5 +3,27 @@
 - Versão
   user@host:~/$ import django; print django.get_version()
 
+- Servidor de desenvolvimento
+  user@host:~/$ python manage.py runserver
+
 - Iniciar projeto
   user@host:~/$ django-admin startproject <nome-projeto>
+
+- Iniciar app
+  user@host:~/$ python manage.py startapp polls
+
+- Iniciar Projeto com todas as dependencias carregadas
+  user@host:~/$ python manage shell
+
+- Configuração MySQL
+
+DATABASES = {
+    'default': {
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'meusite',
+    'USER':'yourusername',
+    'PASSWORD':'yourpassword',
+    'HOST':'localhost',
+    'PORT':'',
+    }
+}

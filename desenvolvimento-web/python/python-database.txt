@@ -1,0 +1,1 @@
+yum install python-devel mysql-devel
