@@ -1,0 +1,19 @@
+Blocos Principais
+- Componentes -> View Ex: datagrid, form, div, cabeçalho,rodapé etc
+- Diretivas -> responsavel por modificar elementos DOM e/ou seu comportamento Ex: atributo HTML que faz uma ação	
+- Roteamento -> Single page application SPA
+- Serviços -> regras de negócio
+- Template
+- Metadata
+- Data Binding
+- Injeção dependencia
+
+Necessário
+- NodeJS
+- typeScript bash $ npm install -g typescript
+-  typings bash $ npm install -g typings
+
+Criando Projeto
+- Cliente Angular bash $ npm install -g angular-cli 
+	Requer: node >=4
+- ng new <project-name> e ng-serve

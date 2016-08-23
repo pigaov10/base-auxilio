@@ -1,4 +1,7 @@
-CENTOS
+***CENTOS***
+
+
+tutorial url http://chimera.labs.oreilly.com/books/1234000000754/ch20.html#_installing_jenkins
 
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
 sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key

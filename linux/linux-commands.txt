@@ -7,7 +7,6 @@ RPM
 		- rpm -Uvh <URL>
 	UNINSTALL 
 		- rpm -e <PACKAGE-NAME>
-
 	FIND QUERY A PACKAGE 
 		- rpm -q <PACKAGE-NAME>
 
@@ -16,3 +15,10 @@ ARQUIVO TEXTO
 echo <texto> >> <nome-arquivo> (adiona linha no final do arquivo)
 
 echo <texto> > <nome-arquivo> (subscreve tudo que existe pelo texto)
+
+
+tamanho arquivos
+
+$ du -hsb (nome do arquivo) => retorna o tamanho sempre em bytes;
+$ du -hsk (nome do arquivo) => retorna o tamanho sempre em KB;
+$ du -hsm (nome do arquivo) => retorna o tamanho sempre em MB; 
