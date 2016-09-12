@@ -1,5 +1,24 @@
 ***LINUX - COMANDOS***
 
+cat /etc/passwd
+
+sudo adduser nomeusuario
+
+sudo userdel nomeusuario
+
+sudo passwd nomeusuario
+
+sudo login 
+
+logout
+
+sudo addgroup nomegroup
+
+sudo delgroup nomegroup
+
+sudo adduser nomeusuario sudo
+
+
 RPM 
 	DIRECTORY - /var/lib/rpm
 
@@ -9,6 +28,7 @@ RPM
 		- rpm -e <PACKAGE-NAME>
 	FIND QUERY A PACKAGE 
 		- rpm -q <PACKAGE-NAME>
+		- rpm -qa | grep -i <PACKAGE-NAME>
 
 ARQUIVO TEXTO
 
