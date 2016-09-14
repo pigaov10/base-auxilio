@@ -1,44 +1,33 @@
 ***LINUX - COMANDOS***
 
 cat /etc/passwd
-
 sudo adduser nomeusuario
-
 sudo userdel nomeusuario
-
 sudo passwd nomeusuario
-
-sudo login 
-
+sudo login
 logout
-
 sudo addgroup nomegroup
-
 sudo delgroup nomegroup
-
 sudo adduser nomeusuario sudo
 
-
-RPM 
+RPM
 	DIRECTORY - /var/lib/rpm
-
 	INSTALL
 		- rpm -Uvh <URL>
-	UNINSTALL 
+	UNINSTALL
 		- rpm -e <PACKAGE-NAME>
-	FIND QUERY A PACKAGE 
+	FIND QUERY A PACKAGE
 		- rpm -q <PACKAGE-NAME>
 		- rpm -qa | grep -i <PACKAGE-NAME>
 
 ARQUIVO TEXTO
-
 echo <texto> >> <nome-arquivo> (adiona linha no final do arquivo)
-
 echo <texto> > <nome-arquivo> (subscreve tudo que existe pelo texto)
 
-
 tamanho arquivos
-
 $ du -hsb (nome do arquivo) => retorna o tamanho sempre em bytes;
 $ du -hsk (nome do arquivo) => retorna o tamanho sempre em KB;
-$ du -hsm (nome do arquivo) => retorna o tamanho sempre em MB; 
+$ du -hsm (nome do arquivo) => retorna o tamanho sempre em MB;
+
+CONTAR QUANTIDADE DE LINHAS
+wc -l <nome-arquivo>
